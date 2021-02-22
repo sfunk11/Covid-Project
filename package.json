@@ -1,0 +1,25 @@
+{
+  "name": "covid-project",
+  "version": "1.0.0",
+  "description": "covid project",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbohn32/Covid-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.12.0",
+    "sequelize": "^4.41.2"
+  },
+  "bugs": {
+    "url": "https://github.com/dbohn32/Covid-Project/issues"
+  },
+  "homepage": "https://github.com/dbohn32/Covid-Project#readme"
+}
