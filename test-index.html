@@ -74,6 +74,19 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function doThing() {
+        var jsonBody =
+          '{"Oklahoma":{"lat":"35.565342","long":"-96.928917","confirmed":417345,"recovered":0,"deaths":4132,"updated":"2021/02/20 16:25:17+00"},"Delaware":{"lat":"39.318523","long":"-75.507141","confirmed":84181,"recovered":0,"deaths":1343,"updated":"2021/02/20 16:25:17+00"}}';
+        var jsonObject = JSON.parse(jsonBody);
+  debugger;
+        for (x in jsonObject) {
+          var stateData = x;
+          alert(JSON.stringify(jsonObject[stateData]));
+        }
+      }
+      doThing();
+    </script>
     <script src="server.js"></script>
   </body>
 </html>
