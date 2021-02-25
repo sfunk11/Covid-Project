@@ -12,7 +12,8 @@ module.exports = function(app) {
   app.get("/stats", async (_req, _res) => {
     try {
       const response = await axiosStats.get("/v1/cases?ab=US");
-      console.log(response);
+      const data = response.data;
+      console.log(data);
     } catch (error) {
       throw error;
     }
@@ -26,7 +27,8 @@ module.exports = function(app) {
       path += "status=" + status;
       path += "&country=" + country;
       const response = await axiosStats.get(path);
-      console.log(response);
+      const data = response.data;
+      console.log(data);
     } catch (error) {
       throw error;
     }
@@ -41,7 +43,8 @@ module.exports = function(app) {
       path += "apikey=" + apiKey;
       path += "&q=Covid&at=" + lon + "," + lat + "&limit=10";
       const response = await axiosSites.get(path);
-      console.log(response);
+      const data = response.data;
+      console.log(data);
     } catch (error) {
       throw error;
     }
