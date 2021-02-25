@@ -5,32 +5,41 @@
   font-family: 'Rajdhani', sans-serif;
 }
 
-body {
-  background-image: url("https://atwcompanies.com/wp-content/uploads/2018/07/black-waves-powerpoint-backgrounds.jpg");
-  background-repeat: none;
-  background-size: cover;
-}
-
 h1 {
-  padding-top: 5%;
+  padding-top: 8%;
   text-decoration: underline;
 }
 
-.display-4 {
+.headline {
   font-size: 90px;
 }
 
-p {
+.sub-headline {
   font-size: 30px;
 }
 
-footer {
+.main {
+  background-image: url("https://2.bp.blogspot.com/-bwBkLra5f3w/VvxQaMhxQRI/AAAAAAAAE_U/7CUQFgosAkYFhIMEDFacn_cwRb0Dwspog/s1600/black%2Bmodern%2Bstylish%2Bbackground%2Bhd%2Bwallpaper.jpg");
+  background-size: cover;
+  background-repeat: none;
+  min-height: 100vh;
+  margin-top: -31px;
+}
+
+.footer {
   position: fixed;
-  left: 0;
   bottom: 0;
+  height: 50px;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
   background-color: #e9ecef;
-  display: block;
+  justify-content: center;
+  line-height: 50px;
+}
+
+a.nav-link {
+  color: #e9ecef;
+}
+
+a.nav-link:hover {
+  color: red;
 }
