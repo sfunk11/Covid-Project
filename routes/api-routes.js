@@ -14,14 +14,14 @@ module.exports = function(app) {
 
   // Get Vaccinations for all
   app.get("/api/vaccinations", async (req, res) => {
-    db.Stats.findAll().then(allVaccinations => {
+    db.Vaccination.findAll().then(allVaccinations => {
       res.json(allVaccinations);
     });
   });
 
   // Get Vaccinations by state
   app.get("/api/vaccinations/:state", async (req, res) => {
-    db.Stats.findOne({
+    db.Vaccination.findOne({
       where: {
         state: req.params.state
       }
