@@ -4,11 +4,19 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
-    streetAddress: {
+    streetNumber: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    street: {
       type: DataTypes.STRING,
       allowNull: false
     },
     city: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    state: {
       type: DataTypes.STRING,
       allowNull: false
     },

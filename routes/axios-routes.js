@@ -46,7 +46,12 @@ module.exports = function(app) {
       path += "&q=Covid&at=" + lon + "," + lat + "&limit=10";
       const response = await axiosSites.get(path);
       const data = response.data;
-      return data;
+
+      for (i = 0; i < data.length; i++) {
+        console.log(data[i].title);
+        console.log(data[i].address);
+        console.log(data[i].contacts);
+      }
     } catch (error) {
       throw error;
     }
