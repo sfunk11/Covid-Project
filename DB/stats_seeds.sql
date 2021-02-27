@@ -12,7 +12,7 @@ values ("All", 28340700, 506232),
 ("Indiana", 658043, 12467),
 ("Louisiana", 426945, 9528),
 ("Texas", 2625154, 42892),
-("Wisconsin", 614260, 6936)
+("Wisconsin", 614260, 6936),
 ("Kansas", 295189, 4681),
 ("American Samoa", 0, 0),
 ("Connecticut", 278184, 7595),

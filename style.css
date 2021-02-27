@@ -65,3 +65,8 @@ div.dropdown-multicol2>div.dropdown-col{
   display:inline-block;
   width: 32%;
 }
+
+.dropdown-menu {
+  overflow-y:auto; 
+  max-height:30vh
+ }
