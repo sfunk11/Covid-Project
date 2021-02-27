@@ -1,0 +1,373 @@
+{
+  "items": [{
+    "title": "Covid-19 Testing Site: Cajundome & Convention Center",
+    "id": "here:pds:place:8409vqec-b18ef0a254f64cb8843d6bd84895917d",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: Cajundome & Convention Center, 444 Cajundome Blvd, Lafayette, LA 70506-4264, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Cajundome Blvd",
+      "postalCode": "70506-4264",
+      "houseNumber": "444"
+    },
+    "position": {
+      "lat": 30.21844,
+      "lng": -92.03887
+    },
+    "access": [{
+      "lat": 30.21757,
+      "lng": -92.04011
+    }],
+    "distance": 1821,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "phone": [{
+        "value": "+13372652100"
+      }],
+      "www": [{
+        "value": "http://ldh.la.gov"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: CVS Health Covid-19 Drive Thru Testing Site - by Appointment Only",
+    "id": "here:pds:place:8409vqef-c9e7c41471b4499fb435044a6ed4813d",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: CVS Health Covid-19 Drive Thru Testing Site - by Appointment Only, 1326 W Pinhook Rd, Lafayette, LA 70503-2906, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "W Pinhook Rd",
+      "postalCode": "70503-2906",
+      "houseNumber": "1326"
+    },
+    "position": {
+      "lat": 30.20034,
+      "lng": -92.0159
+    },
+    "access": [{
+      "lat": 30.20029,
+      "lng": -92.01579
+    }],
+    "distance": 2221,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "www": [{
+        "value": "http://ldh.la.gov/Coronavirus"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: Clark Integrated Medical Clinic",
+    "id": "here:pds:place:8409vqef-f61ea5135b314808bad8a933683273a9",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: Clark Integrated Medical Clinic, 130 Rue Beauregard, Lafayette, LA 70508-3102, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Rue Beauregard",
+      "postalCode": "70508-3102",
+      "houseNumber": "130"
+    },
+    "position": {
+      "lat": 30.19261,
+      "lng": -92.01253
+    },
+    "access": [{
+      "lat": 30.19276,
+      "lng": -92.01236
+    }],
+    "distance": 3129,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "phone": [{
+        "value": "+13372323353"
+      }],
+      "www": [{
+        "value": "http://ldh.la.gov"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: CVS Health Covid-19 Drive Thru Testing Site - by Appointment Only",
+    "id": "here:pds:place:8409vqec-6a64f090eff242bb89579896c413de5e",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: CVS Health Covid-19 Drive Thru Testing Site - by Appointment Only, 705 Bertrand Dr, Lafayette, LA 70506, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Bertrand Dr",
+      "postalCode": "70506",
+      "houseNumber": "705"
+    },
+    "position": {
+      "lat": 30.21359,
+      "lng": -92.04764
+    },
+    "access": [{
+      "lat": 30.21432,
+      "lng": -92.04655
+    }],
+    "distance": 2750,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "www": [{
+        "value": "http://ldh.la.gov/Coronavirus"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: Southstar Urgent Care",
+    "id": "here:pds:place:8409vqeb-1b2b0c8b606d493383f9aff90257a48d",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: Southstar Urgent Care, 203 Westgate Rd, Lafayette, LA 70506-2712, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Westgate Rd",
+      "postalCode": "70506-2712",
+      "houseNumber": "203"
+    },
+    "position": {
+      "lat": 30.23107,
+      "lng": -92.08656
+    },
+    "access": [{
+      "lat": 30.23106,
+      "lng": -92.08708
+    }],
+    "distance": 6512,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "phone": [{
+        "value": "+13372238401"
+      }],
+      "www": [{
+        "value": "http://ldh.la.gov"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: Minutemed Clinic",
+    "id": "here:pds:place:8409vqe8-593560201d8a42969ef94728cf519369",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: Minutemed Clinic, 3621 Ambassador Caffery Pkwy, Lafayette, LA 70503-5132, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Ambassador Caffery Pkwy",
+      "postalCode": "70503-5132",
+      "houseNumber": "3621"
+    },
+    "position": {
+      "lat": 30.17494,
+      "lng": -92.07047
+    },
+    "access": [{
+      "lat": 30.17482,
+      "lng": -92.07059
+    }],
+    "distance": 6974,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "phone": [{
+        "value": "+13375344410"
+      }],
+      "www": [{
+        "value": "http://ldh.la.gov"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: Ahs Walk-in Clinic",
+    "id": "here:pds:place:8409vqe6-3b2dd8af94574d31937124f6bfc00853",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: Ahs Walk-in Clinic, 6011 Ambassador Caffery Pkwy, Youngsville, LA 70592-5170, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Youngsville",
+      "street": "Ambassador Caffery Pkwy",
+      "postalCode": "70592-5170",
+      "houseNumber": "6011"
+    },
+    "position": {
+      "lat": 30.13556,
+      "lng": -92.00667
+    },
+    "access": [{
+      "lat": 30.13542,
+      "lng": -92.00667
+    }],
+    "distance": 9476,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "phone": [{
+        "value": "+13372349925"
+      }],
+      "www": [{
+        "value": "http://ldh.la.gov"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: Quest Diagnostics - Lafayette",
+    "id": "here:pds:place:8409vqe9-9a6b67c6d5254248b58a4c24b34b8640",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: Quest Diagnostics - Lafayette, Ambassador Caffery Pkwy, Lafayette, LA 70508, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Ambassador Caffery Pkwy",
+      "postalCode": "70508"
+    },
+    "position": {
+      "lat": 30.147,
+      "lng": -92.03539
+    },
+    "access": [{
+      "lat": 30.14713,
+      "lng": -92.03532
+    }],
+    "distance": 8251,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "phone": [{
+        "value": "+18666978378"
+      }],
+      "www": [{
+        "value": "http://ldh.la.gov/Coronavirus"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: Southstar Urgent Care Lafayette",
+    "id": "here:pds:place:8409vqe8-38428e9f47be48c48d463b0cc932dae8",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: Southstar Urgent Care Lafayette, 6770 Johnston St, Lafayette, LA 70503-6202, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Johnston St",
+      "postalCode": "70503-6202",
+      "houseNumber": "6770"
+    },
+    "position": {
+      "lat": 30.15172,
+      "lng": -92.0932
+    },
+    "access": [{
+      "lat": 30.15164,
+      "lng": -92.09309
+    }],
+    "distance": 10351,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "phone": [{
+        "value": "+13373265702"
+      }],
+      "www": [{
+        "value": "http://ldh.la.gov"
+      }]
+    }]
+  }, {
+    "title": "Covid-19 Testing Site: CVS Health Covid-19 Drive Thru Testing Site - by Appointment Only",
+    "id": "here:pds:place:8409vqe3-3ce1de4598f544edbf1cddcbf9165ae4",
+    "resultType": "place",
+    "address": {
+      "label": "Covid-19 Testing Site: CVS Health Covid-19 Drive Thru Testing Site - by Appointment Only, 5044 Ambassador Caffery Pkwy, Lafayette, LA 70508-6914, United States",
+      "countryCode": "USA",
+      "countryName": "United States",
+      "stateCode": "LA",
+      "state": "Louisiana",
+      "county": "Lafayette",
+      "city": "Lafayette",
+      "street": "Ambassador Caffery Pkwy",
+      "postalCode": "70508-6914",
+      "houseNumber": "5044"
+    },
+    "position": {
+      "lat": 30.14561,
+      "lng": -92.03337
+    },
+    "access": [{
+      "lat": 30.14625,
+      "lng": -92.03374
+    }],
+    "distance": 8371,
+    "categories": [{
+      "id": "800-8000-0400",
+      "name": "Covid-19 Testing Site",
+      "primary": true
+    }],
+    "contacts": [{
+      "www": [{
+        "value": "http://ldh.la.gov/Coronavirus"
+      }]
+    }]
+  }]
+}

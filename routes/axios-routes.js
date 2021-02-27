@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
+const db = require("../models");
 const axios = require("axios");
+const { response } = require("express");
 const axiosStats = axios.create({
   baseURL: "some-https://covid-api.mmediagroup.fr"
 });
@@ -9,7 +11,7 @@ const axiosSites = axios.create({
 
 module.exports = function(app) {
   // API call for current stats
-  app.get("/stats", async (_req, _res) => {
+  app.get("/stats", async (req, res) => {
     try {
       const response = await axiosStats.get("/v1/cases?ab=US");
       const data = response.data;
@@ -44,7 +46,12 @@ module.exports = function(app) {
       path += "&q=Covid&at=" + lon + "," + lat + "&limit=10";
       const response = await axiosSites.get(path);
       const data = response.data;
-      console.log(data);
+
+      for (i = 0; i < data.length; i++) {
+        console.log(data[i].title);
+        console.log(data[i].address);
+        console.log(data[i].contacts);
+      }
     } catch (error) {
       throw error;
     }

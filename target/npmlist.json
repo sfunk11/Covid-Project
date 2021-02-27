@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"covid-project","dependencies":{"axios":{"version":"0.21.1"},"bcryptjs":{"version":"2.4.3"},"express-handlebars":{"version":"5.2.1"},"express-session":{"version":"1.17.1"},"express":{"version":"4.17.1"},"mysql2":{"version":"1.7.0"},"passport-local":{"version":"1.0.0"},"passport":{"version":"0.4.1"},"sequelize":{"version":"5.22.3"}}}
