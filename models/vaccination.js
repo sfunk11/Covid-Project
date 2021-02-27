@@ -35,6 +35,14 @@ module.exports = function(sequelize, DataTypes) {
     atLeastTwoDosesPer100k: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
     }
   });
 

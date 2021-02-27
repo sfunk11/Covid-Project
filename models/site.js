@@ -21,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     zipCode: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
     },
     phoneNumber: {
@@ -31,6 +31,14 @@ module.exports = function(sequelize, DataTypes) {
     website: {
       type: DataTypes.STRING,
       allowNull: true
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
+      defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
     }
   });
 

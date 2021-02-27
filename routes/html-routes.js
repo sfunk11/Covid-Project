@@ -8,14 +8,18 @@ module.exports = function(app) {
   // app.get("/", (req, res) => {
   //   res.sendFile(path.join(__dirname, "../test-index.html"));
   // });
-  app.get("/", (req, res) => {
+  app.get("/signup", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
       res.redirect("/members");
     }
     res.render("signup");
   });
-
+  // route for Test Site Search Page
+  app.get("/site", (req, res) => {
+    // If the user already has an account send them to the members page
+    res.render("siteSearch");
+  });
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {
