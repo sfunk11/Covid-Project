@@ -70,3 +70,21 @@ div.dropdown-multicol2>div.dropdown-col{
   overflow-y:auto; 
   max-height:30vh
  }
+
+ /* update data page */
+
+ .validation {
+   margin: 10px 10px -3px 21%;
+   width: 60%;
+ }
+
+ .btn:hover {
+  color: red;
+ }
+
+ .add-stats {
+   color: white;
+   width: 30%;
+   margin-left: 35.5%;
+   margin-top: 70px;
+ }
