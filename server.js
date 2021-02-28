@@ -1,6 +1,9 @@
 // Requiring necessary npm packages
 const express = require("express");
+const Handlebars = require("handlebars");
 const exphbs = require("express-handlebars");
+// eslint-disable-next-line prettier/prettier
+const { allowInsecurePrototypeAccess } = require("@handlebars/allow-prototype-access");
 const session = require("express-session");
 // Requiring passport as we've configured it
 const passport = require("./config/passport");
@@ -13,7 +16,13 @@ const db = require("./models");
 const app = express();
 app.use(express.static("public"));
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main",
+    handlebars: allowInsecurePrototypeAccess(Handlebars)
+  })
+);
 app.set("view engine", "handlebars");
 
 app.use(express.urlencoded({ extended: true }));
