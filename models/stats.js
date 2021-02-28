@@ -1,8 +1,9 @@
 module.exports = function(sequelize, DataTypes) {
-  const Stats = sequelize.define("Stat", {
+  const Stat = sequelize.define("Stat", {
     state: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      primaryKey: true
     },
     totalCases: {
       type: DataTypes.INTEGER,
@@ -22,5 +23,12 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  return Stats;
+  Stat.associate = function(models) {
+    Stat.hasOne(models.Vaccination, {
+      foreignKey: "state",
+      constraints: false
+    });
+  };
+
+  return Stat;
 };

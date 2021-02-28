@@ -53,18 +53,9 @@ $(document).ready(() => {
       }
     }).done(data => {
       console.log(data);
+      const lon = data.data[0].longitude;
+      const lat = data.data[0].latitude;
+      window.location.replace(`/sites/${lat}/${lon}`);
     });
   }
-  //   $.post("/api/login", {
-  //     email: email,
-  //     password: password
-  //   })
-  //     .then(() => {
-  //       window.location.replace("/members");
-  //       // If there's an error, log the error
-  //     })
-  //     .catch(err => {
-  //       console.log(err);
-  //     });
-  // }
 });

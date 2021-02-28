@@ -2,7 +2,8 @@ module.exports = function(sequelize, DataTypes) {
   const Vaccination = sequelize.define("Vaccination", {
     state: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      primaryKey: true
     },
     totalDelivered: {
       type: DataTypes.INTEGER,
@@ -45,6 +46,13 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: sequelize.literal("CURRENT_TIMESTAMP")
     }
   });
+
+  Vaccination.associate = function(models) {
+    Vaccination.belongsTo(models.Stat, {
+      foreignKey: "state",
+      constraints: false
+    });
+  };
 
   return Vaccination;
 };
