@@ -3,6 +3,7 @@
   text-align: center;
   justify-content: center;
   font-family: 'Rajdhani', sans-serif;
+  
 }
 
 h1 {
@@ -24,6 +25,7 @@ h1 {
   background-repeat: none;
   min-height: 100vh;
   margin-top: -31px;
+  color: white;
 }
 
 .footer {
@@ -34,6 +36,7 @@ h1 {
   background-color: #e9ecef;
   justify-content: center;
   line-height: 50px;
+  color: rgb(39, 28, 28);
 }
 
 a.nav-link {
@@ -43,3 +46,51 @@ a.nav-link {
 a.nav-link:hover {
   color: red;
 }
+
+.state-options {
+  margin-top: 50px;
+}
+
+/* rows */
+div.dropdown-multicol{
+  width: 30em;
+}
+div.dropdown-row>a.dropdown-item{
+  display:inline-block;
+  width: 32%;
+}
+
+/* Columns */
+div.dropdown-multicol2{
+  width: 30em;
+}
+div.dropdown-multicol2>div.dropdown-col{
+  display:inline-block;
+  width: 32%;
+}
+
+.dropdown-menu {
+  overflow-y:auto; 
+  max-height:30vh
+ }
+
+ /* update data page */
+
+ .validation {
+   margin: 10px 10px -3px 21%;
+   width: 60%;
+   float: right;
+   
+
+ }
+
+ .btn:hover {
+  color: red;
+ }
+
+ .add-stats {
+   color: white;
+   width: 30%;
+   margin-left: 35.5%;
+   margin-top: 70px;
+ }
