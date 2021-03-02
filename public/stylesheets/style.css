@@ -11,6 +11,21 @@ h1 {
   text-decoration: underline;
 }
 
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+p {
+  font-size: 30px;
+}
+
+span {
+  color: red;
+}
+
 .headline {
   font-size: 90px;
 }
@@ -47,11 +62,13 @@ a.nav-link:hover {
   color: red;
 }
 
+
+/* search by state */
 .state-options {
   margin-top: 50px;
 }
 
-/* rows */
+/* dropdown rows */
 div.dropdown-multicol{
   width: 30em;
 }
@@ -60,7 +77,7 @@ div.dropdown-row>a.dropdown-item{
   width: 32%;
 }
 
-/* Columns */
+/* dropdown columns */
 div.dropdown-multicol2{
   width: 30em;
 }
@@ -80,8 +97,6 @@ div.dropdown-multicol2>div.dropdown-col{
    margin: 10px 10px -3px 21%;
    width: 60%;
    float: right;
-   
-
  }
 
  .btn:hover {
@@ -93,4 +108,21 @@ div.dropdown-multicol2>div.dropdown-col{
    width: 30%;
    margin-left: 35.5%;
    margin-top: 70px;
+ }
+
+ /* search by address page */
+
+ .search {
+   width: 82%;
+   padding-left: 18%;
+ }
+
+ /* signup page */
+
+ #signup-here {
+   color: red;
+ }
+
+ #signup-here:hover {
+   color: red;
  }
