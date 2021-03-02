@@ -1,6 +1,16 @@
+
+<div class="container" style="display:flex; flex-direction:column">
 {{#each sites}}
-  
-  <p>Address: {{address.label}}</p>
-  <p>Website: {{contacts.www.value}}</p>
-  <hr>
+  <div class="card">
+<div class="card-body">
+  <div class="card-header">{{this.title}}</div>
+  <p id="address">{{this.address.houseNumber}} {{this.address.street}}</p>
+  <p id="address">{{this.address.city}}, {{this.address.state}} {{this.address.postalCode}}</p>
+</div>
+  </div>
 {{/each}}
+</div>
+
+ {{!-- <p>{{address.label}}</p> --}}
+  {{!-- <p>Website: {{contacts.www.value}}</p>
+  <hr> --}}

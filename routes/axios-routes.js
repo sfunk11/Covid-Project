@@ -45,7 +45,6 @@ module.exports = function(app) {
       path += "apikey=" + apiKey;
       path += "&q=Covid&at=" + lon + "," + lat + "&limit=10";
       const response = await axiosSites.get(path);
-      console.log(response.data.items[0].contacts[0].www[0].value);
       res.render("siteResults", { sites: response.data.items });
     } catch (error) {
       throw error;
