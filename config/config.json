@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "root",
-    "password": "Th1$SQLPW",
+    "username": "sam",
+    "password": "Dubhghall1!",
     "database": "covid_db",
     "host": "127.0.0.1",
     "dialect": "mysql"

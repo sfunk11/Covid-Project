@@ -9,10 +9,10 @@ const upload = async (req, res) => {
     }
 
     const csvData = [];
-    const path = `/public/csvFiles/${req.file.filename}`;
+    const path = __basedir + `public/csvFiles/${req.file.filename}`;
 
     fs.createReadStream(path)
-      .pipe(csv.parse({ headers: false }))
+      .pipe(csv.parse({ headers: true, discardUnmappedColumns: true }))
       .on("error", error => {
         throw error.message;
       })
@@ -20,7 +20,10 @@ const upload = async (req, res) => {
         csvData.push(row);
       })
       .on("end", () => {
-        db.Vaccination.bulkCreate(csvData)
+        console.log(csvData);
+        db.Stat.bulkCreate(csvData, {
+          updateOnDuplicate: ["totalCases", "totalDeaths", "updatedAt"]
+        })
           .then(() => {
             res.status(200).send({
               message:

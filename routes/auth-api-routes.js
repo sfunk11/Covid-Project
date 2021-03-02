@@ -42,7 +42,7 @@ module.exports = function(app) {
   app.post("/upload", upload.single("file"), csvController.upload);
 
   app.get("/api/stateList", (req, res) => {
-    db.Stat.findAll().then(stateData => {
+    db.Stat.findAll({ order: [["state", "ASC"]] }).then(stateData => {
       res.json(stateData);
     });
   });
