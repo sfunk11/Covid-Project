@@ -14,6 +14,24 @@ module.exports = function(app) {
       res.render("index", statsData.dataValues);
     });
   });
+
+  app.get("/state/:state", (req, res) => {
+    db.Stat.findOne({
+      where: {
+        state: req.params.state
+      },
+      include: [db.Vaccination]
+    }).then(statsData => {
+      console.log(statsData);
+      res.render("stateResults", statsData);
+    });
+  });
+
+  app.get("/state", (req, res) => {
+    // If the user already has an account send them to the members page
+    res.render("state");
+  });
+
   app.get("/signup", (req, res) => {
     // If the user already has an account send them to the members page
     if (req.user) {

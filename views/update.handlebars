@@ -10,10 +10,11 @@
     </div>
   </form>
   <br>
-  <form>
+  <form action="/upload" enctype="multipart/form-data" method="POST">
     <div class="custom-file">
-      <input type="file" class="custom-file-input" id="customFile">
+      <input type="file" class="custom-file-input" name="file" id="customFile">
       <label class="custom-file-label" for="customFile">Choose file</label>
+      <input type="submit" value="Upload .CSV File" />
     </div>
   </form>
 </div>

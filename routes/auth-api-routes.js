@@ -1,6 +1,8 @@
-// Requiring our models and passport as we've configured it
+// Requiring our models and middleware as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const csvController = require("../config/middleware/csvController");
+const upload = require("../config/middleware/upload");
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -34,6 +36,15 @@ module.exports = function(app) {
   app.get("/logout", (req, res) => {
     req.logout();
     res.redirect("/");
+  });
+
+  // Route for uploading a CSV file from the HTML
+  app.post("/upload", upload.single("file"), csvController.upload);
+
+  app.get("/api/stateList", (req, res) => {
+    db.Stat.findAll().then(stateData => {
+      res.json(stateData);
+    });
   });
 
   // Route for getting some data about our user to be used client side
