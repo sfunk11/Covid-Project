@@ -10,7 +10,7 @@ const csvFilter = (req, file, cb) => {
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "/public/csvFiles");
+    cb(null, `${__basedir}public/csvFiles`);
   },
   filename: (req, file, cb) => {
     console.log(file.originalname);
