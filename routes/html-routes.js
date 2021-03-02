@@ -2,6 +2,7 @@ const db = require("../models");
 
 // Requiring our custom middleware
 const isAuthenticated = require("../config/middleware/isAuthenticated");
+const formatStats = require("../config/middleware/formatNumbers");
 
 module.exports = function(app) {
   app.get("/", (req, res) => {
@@ -11,7 +12,9 @@ module.exports = function(app) {
       },
       include: [db.Vaccination]
     }).then(statsData => {
-      res.render("index", statsData.dataValues);
+      const hbsObj = formatStats(statsData);
+      console.log(hbsObj);
+      res.render("index", hbsObj);
     });
   });
 
@@ -22,8 +25,8 @@ module.exports = function(app) {
       },
       include: [db.Vaccination]
     }).then(statsData => {
-      console.log(statsData);
-      res.render("stateResults", statsData);
+      const hbsObj = formatStats(statsData);
+      res.render("stateResults", hbsObj);
     });
   });
 
