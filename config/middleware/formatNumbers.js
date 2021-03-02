@@ -7,6 +7,8 @@ module.exports = function(statsData) {
   const totalAdministeredValue = statsData.dataValues.Vaccination.totalAdministered.toLocaleString("en-US");
   const atLeast2DosesValue = statsData.dataValues.Vaccination.atLeastTwoDoses.toLocaleString("en-US");
   const atLeast2DosesPer100kValue = statsData.dataValues.Vaccination.atLeastTwoDosesPer100k.toLocaleString("en-US");
+  const atLeast2DosesPercent = parseFloat(atLeast2DosesPer100kValue) / 100;
+  const atLeast2DosesPercentFormatted = atLeast2DosesPercent.toLocaleString("en-US", {style: "percent"});
 
   const hbsObj = {
     Stats: {
@@ -15,7 +17,7 @@ module.exports = function(statsData) {
       totalDeaths: totalDeathsValue,
       totalAdministered: totalAdministeredValue,
       atLeastTwoDoses: atLeast2DosesValue,
-      atLeastTwoDosesPer100k: atLeast2DosesPer100kValue
+      atLeastTwoDosesPer100k: atLeast2DosesPercentFormatted
     }
   };
   return hbsObj;
