@@ -65,7 +65,16 @@ const uploadVacc = async (req, res) => {
       .on("end", () => {
         console.log(csvData);
         db.Vaccination.bulkCreate(csvData, {
-          updateOnDuplicate: ["totalCases", "totalDeaths", "updatedAt"]
+          updateOnDuplicate: [
+            "totalDelivered",
+            "totalAdministered",
+            "deliveredPer100k",
+            "administeredPer100k",
+            "atLeastOneDose",
+            "atLeastOneDosePer100k",
+            "atLeastTwoDoses",
+            "atLeastTwoDosesPer100k"
+          ]
         })
           .then(() => {
             res.status(200).send({
