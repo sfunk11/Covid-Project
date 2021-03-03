@@ -39,7 +39,7 @@ module.exports = function(app) {
   });
 
   // Route for uploading a CSV file from the HTML
-  app.post("/upload/stat", upload.single("file"), csvController.uploadStat);
+  app.post("/upload/stats", upload.single("file"), csvController.uploadStat);
   app.post("/upload/vacc", upload.single("file"), csvController.uploadVacc);
 
   app.get("/api/stateList", (req, res) => {
