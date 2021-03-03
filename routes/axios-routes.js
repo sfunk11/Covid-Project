@@ -2,6 +2,8 @@
 // const db = require("../models");
 const axios = require("axios");
 const formatSiteResults = require("../config/middleware/formatSiteResults");
+const token = process.env.API_TOKEN;
+
 // const { response } = require("express");
 const axiosStats = axios.create({
   baseURL: "some-https://covid-api.mmediagroup.fr"
@@ -41,7 +43,7 @@ module.exports = function(app) {
     try {
       const lon = req.params.lon;
       const lat = req.params.lat;
-      const apiKey = "f6DSSKECPwqTQkKxQSd87WsvF6m7miV1IxZ6i4ac02U";
+      const apiKey = token;
       let path = "v1/discover?";
       path += "apikey=" + apiKey;
       path += "&q=Covid&at=" + lon + "," + lat + "&limit=10";
