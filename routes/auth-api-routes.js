@@ -39,7 +39,8 @@ module.exports = function(app) {
   });
 
   // Route for uploading a CSV file from the HTML
-  app.post("/upload", upload.single("file"), csvController.upload);
+  app.post("/upload/stat", upload.single("file"), csvController.uploadStat);
+  app.post("/upload/vacc", upload.single("file"), csvController.uploadVacc);
 
   app.get("/api/stateList", (req, res) => {
     db.Stat.findAll({ order: [["state", "ASC"]] }).then(stateData => {
