@@ -7,13 +7,13 @@ $(document).ready(() => {
   const zipInput = $("input#inputZip");
 
   // When the form is submitted, we validate there's an email and password entered
-  searchForm.on("submit", (event) => {
+  searchForm.on("submit", event => {
     event.preventDefault();
     const addressData = {
       address: addressInput.val().trim(),
       city: cityInput.val().trim(),
       state: stateInput.val(),
-      zip: zipInput.val().trim(),
+      zip: zipInput.val().trim()
     };
 
     getAddressString(addressData);
@@ -49,11 +49,10 @@ $(document).ready(() => {
         // eslint-disable-next-line camelcase
         access_key: "dab047f58c7876f8b75f42d8d763f574",
         query: address,
-        limit: 1,
-      },
+        limit: 1
+      }
     }).done(data => {
       event.preventDefault();
-      console.log(data);
       const lon = data.data[0].longitude;
       const lat = data.data[0].latitude;
       window.location.replace(`/sites/${lat}/${lon}`);

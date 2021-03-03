@@ -1,25 +1,26 @@
 /* eslint-disable no-unused-vars */
 // const db = require("../models");
 const axios = require("axios");
+const formatSiteResults = require("../config/middleware/formatSiteResults");
 // const { response } = require("express");
-// const axiosStats = axios.create({
-//   baseURL: "some-https://covid-api.mmediagroup.fr"
-// });
+const axiosStats = axios.create({
+  baseURL: "some-https://covid-api.mmediagroup.fr"
+});
 const axiosSites = axios.create({
   baseURL: "https://discover.search.hereapi.com"
 });
 
 module.exports = function(app) {
-  // // API call for current stats
-  // app.get("/stats", async (req, res) => {
-  //   try {
-  //     const response = await axiosStats.get("/v1/cases?ab=US");
-  //     const data = response.data;
-  //     console.log(data);
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // });
+  // API call for current stats
+  app.get("/stats", async (req, res) => {
+    try {
+      const response = await axiosStats.get("/v1/cases?ab=US");
+      const data = response.data;
+      console.log(data);
+    } catch (error) {
+      throw error;
+    }
+  });
   // //  API call for history information
   // app.get("/history", async (_req, _res) => {
   //   try {
@@ -45,7 +46,8 @@ module.exports = function(app) {
       path += "apikey=" + apiKey;
       path += "&q=Covid&at=" + lon + "," + lat + "&limit=10";
       const response = await axiosSites.get(path);
-      res.render("siteResults", { sites: response.data.items });
+      const siteArray = formatSiteResults(response.data.items);
+      res.render("siteResults", { sites: siteArray });
     } catch (error) {
       throw error;
     }

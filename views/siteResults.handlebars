@@ -1,14 +1,17 @@
 
-<div class="container" style="display:flex; flex-direction:column">
+<div class="container" style="pb-5 display:flex; flex-direction:column">
 {{#each sites}}
   <div class="card">
 <div class="card-body">
   <div class="card-header">{{this.title}}</div>
-  <p id="address">{{this.address.houseNumber}} {{this.address.street}}</p>
-  <p id="address">{{this.address.city}}, {{this.address.state}} {{this.address.postalCode}}</p>
+  <p id="address">{{this.houseNumber}} {{this.street}}</p>
+  <p id="address">{{this.city}}, {{this.state}} {{this.postalCode}}</p>
+  <p id="address">{{this.website}}</p>
 </div>
   </div>
 {{/each}}
+<br><br><br>
+<br>
 </div>
 
  {{!-- <p>{{address.label}}</p> --}}

@@ -46,12 +46,10 @@ module.exports = function(app) {
 
   app.post("/results", (req, res) => {
     siteData = req.body.hbsObj;
-    console.log(siteData);
     res.render("siteResults", siteData);
   });
 
   app.get("/site", (req, res) => {
-    // If the user already has an account send them to the members page
     res.render("siteSearch");
   });
 

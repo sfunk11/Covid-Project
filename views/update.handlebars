@@ -1,20 +1,21 @@
-<div class="add-stats">
-  <form>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
-      <label class="custom-control-label" for="customRadio">Add File for Covid Stats</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
-      <label class="custom-control-label" for="customRadio2">Add File for Vaccine Stats</label>
-    </div>
-  </form>
+<div>
   <br>
-  <form action="/upload" enctype="multipart/form-data" method="POST">
+  <h3>Add File for Case Statistics</h3>
+  <form action="/upload/stats" enctype="multipart/form-data" method="POST">
     <div class="custom-file">
       <input type="file" class="custom-file-input" name="file" id="customFile">
       <label class="custom-file-label" for="customFile">Choose file</label>
-      <input type="submit" value="Upload .CSV File" />
+      <input class="btn btn-dark" type="submit" value="Upload .CSV File" />
+    </div>
+  </form>
+  <br>
+  <br>
+  <h3>Add File for Vaccination Statistics</h3>
+  <form action="/upload/vacc" enctype="multipart/form-data" method="POST">
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" name="file" id="customFile">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+      <input class="btn btn-dark" type="submit" value="Upload .CSV File" />
     </div>
   </form>
 </div>
