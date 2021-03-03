@@ -7,8 +7,8 @@ module.exports = function(statsData) {
   const totalAdministeredValue = statsData.dataValues.Vaccination.totalAdministered.toLocaleString("en-US");
   const atLeast2DosesValue = statsData.dataValues.Vaccination.atLeastTwoDoses.toLocaleString("en-US");
   const atLeast2DosesPer100kValue = statsData.dataValues.Vaccination.atLeastTwoDosesPer100k.toLocaleString("en-US");
-  const atLeast2DosesPercent = parseFloat(atLeast2DosesPer100kValue) / 100;
-  const atLeast2DosesPercentFormatted = atLeast2DosesPercent.toLocaleString("en-US", {style: "percent"});
+  
+  const atLeast2DosesPercentFormatted = atLeast2DosesPer100kValue + "%";
 
   const hbsObj = {
     Stats: {
