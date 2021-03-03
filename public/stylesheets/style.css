@@ -6,6 +6,13 @@
   
 }
 
+#rona {
+  width: 375px; 
+  height: 250px;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
 h1 {
   padding-top: 8%;
   text-decoration: underline;
@@ -91,7 +98,7 @@ div.dropdown-multicol2>div.dropdown-col{
   max-height:30vh
  }
 
- /* update data page */
+ /* update data login page */
 
  .validation {
    margin: 10px 10px -3px 21%;
@@ -141,6 +148,7 @@ div.dropdown-multicol2>div.dropdown-col{
    background-color: black;
    font-size: 30px;
    border: .5px solid rgb(159, 37, 37);
+   border-radius: 10px !important;
    box-shadow: 3px 3px rgb(159, 37, 37);
  }
 
@@ -149,5 +157,16 @@ div.dropdown-multicol2>div.dropdown-col{
    margin-left: 15%;
    width: 70%;
    background-color: #e9ecef;
-   /* box-shadow: 3px 3px darkgray; */
+   border-radius: 10px !important;
+ }
+
+ /* Update Data - Upload File Page */
+
+ .add-file {
+  width: 40%;
+  margin-left: 30%;
+ }
+
+ .upload-button {
+  margin-top: 15px;
  }
