@@ -11,8 +11,8 @@ The Covid Project is a website that contains the lastest statistics on the Covid
 
 ## Screenshots
 
-![screenshot](/Screenshot (27).png)
-![screenshot](/Screenshot (28).png)
+![screenshot](/Screenshot(27).png)
+![screenshot](/Screenshot(28).png)
 
 
 
