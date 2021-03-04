@@ -10,10 +10,8 @@ The Covid Project is a website that contains the lastest statistics on the Covid
 - Dan Bohn
 
 ## Screenshots
-
-![screenshot](/Screenshot(27).png)
-![screenshot](/Screenshot(28).png)
-
+<img src= "./Screenshot (27).png">
+<img src= "./Screenshot (28).png">
 
 
 ## Deployment
