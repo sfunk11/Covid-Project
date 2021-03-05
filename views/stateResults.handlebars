@@ -1,14 +1,4 @@
 <div class="state-options">
-
-      <h2> Select Your State </h2>
-
-      <form>
-        <select id="stateList" name="dropdown">
-          <option value=""> -- </option>
-
-        </select>
-      </form>
-
       <h2><span>{{Stats.state}}</span></h2>
       <p>Confirmed Cases <span>{{Stats.totalCases}}</span></p>
       <p>Total Deaths: <span>{{Stats.totalDeaths}}</span></p>
@@ -17,5 +7,15 @@
 
       <p>People with 2 doses: <span>{{Stats.atLeastTwoDoses}}</span></p>
 
-      <p>Percentage of People Who are Fully Vaccinated: <span>~ {{Stats.atLeastTwoDosesPer100k}}</span></p>
+      <p>Percentage of People Who have received at least 1 vaccination: <span>approx. {{Stats.atLeastTwoDosesPer100k}}</span></p>
+  <br>
+  <br>
+  <h3> Select Another State </h3>
+
+      <form>
+        <select id="stateList" name="dropdown">
+          <option value=""> -- </option>
+
+        </select>
+      </form>
   </div>
