@@ -1,7 +1,10 @@
 /* eslint-disable no-unused-vars */
-const db = require("../models");
+// const db = require("../models");
 const axios = require("axios");
-const { response } = require("express");
+const formatSiteResults = require("../config/middleware/formatSiteResults");
+const token = process.env.API_TOKEN;
+
+// const { response } = require("express");
 const axiosStats = axios.create({
   baseURL: "some-https://covid-api.mmediagroup.fr"
 });
@@ -20,38 +23,33 @@ module.exports = function(app) {
       throw error;
     }
   });
-  //  API call for history information
-  app.get("/history", async (_req, _res) => {
-    try {
-      const country = "US";
-      const status = "confirmed";
-      let path = "/v1/history?";
-      path += "status=" + status;
-      path += "&country=" + country;
-      const response = await axiosStats.get(path);
-      const data = response.data;
-      console.log(data);
-    } catch (error) {
-      throw error;
-    }
-  });
+  // //  API call for history information
+  // app.get("/history", async (_req, _res) => {
+  //   try {
+  //     const country = "US";
+  //     const status = "confirmed";
+  //     let path = "/v1/history?";
+  //     path += "status=" + status;
+  //     path += "&country=" + country;
+  //     const response = await axiosStats.get(path);
+  //     const data = response.data;
+  //     console.log(data);
+  //   } catch (error) {
+  //     throw error;
+  //   }
+  // });
   // API call for testing locations
-  app.get("/sites/:lon/:lat", async (req, _res) => {
+  app.get("/sites/:lon/:lat", async (req, res) => {
     try {
       const lon = req.params.lon;
       const lat = req.params.lat;
-      const apiKey = "f6DSSKECPwqTQkKxQSd87WsvF6m7miV1IxZ6i4ac02U";
+      const apiKey = token;
       let path = "v1/discover?";
       path += "apikey=" + apiKey;
       path += "&q=Covid&at=" + lon + "," + lat + "&limit=10";
       const response = await axiosSites.get(path);
-      const data = response.data;
-
-      for (i = 0; i < data.length; i++) {
-        console.log(data[i].title);
-        console.log(data[i].address);
-        console.log(data[i].contacts);
-      }
+      const siteArray = formatSiteResults(response.data.items);
+      res.render("siteResults", { sites: siteArray });
     } catch (error) {
       throw error;
     }
