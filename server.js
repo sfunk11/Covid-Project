@@ -8,6 +8,7 @@ const session = require("express-session");
 // Requiring passport as we've configured it
 const passport = require("./config/passport");
 require("dotenv").config({ path: __dirname + "/.env" });
+const compression = require("compression");
 
 // Setting up port and requiring models for syncing
 const PORT = process.env.PORT || 8080;
@@ -17,6 +18,7 @@ global.__basedir = __dirname + "/";
 // Creating express app and configuring middleware needed for authentication
 const app = express();
 app.use(express.static("public"));
+app.use(compression({ level: -1 }));
 
 app.engine(
   "handlebars",
